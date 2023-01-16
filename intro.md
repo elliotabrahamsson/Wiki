@@ -36,7 +36,7 @@
 
 ---
 
-## Git
+## Git local commands
 
 ### List of useful Git commands
 
@@ -208,6 +208,70 @@ flowchart LR
     Staging --> |git init| id2
 
 ```
+
+---
+
+## Git remote commands
+
+1. Git clone - git clone lets you clone a repository from Github (remote repository) to your local machine (working directory)
+
+```
+git clone https://github.com/elliotabrahamsson/Wiki.git
+```
+
+This is very convenient when working with different people or if you work remotely between different machines
+
+For mor about git clone click [here](https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-clone#:~:text=git%20clone%20is%20primarily%20used,copies%20an%20existing%20Git%20repository.)
+
+2. Git remote - git remote lets you make, view or delete connections towards other repositories
+
+```
+git remote add <name> <url>
+```
+
+The name can be used as a shortcut for when you need to use the repo again and the url is the link for the repo
+
+For more about git remote click [here](https://www.atlassian.com/git/tutorials/syncing#:~:text=The%20git%20remote%20command%20lets,direct%20links%20into%20other%20repositories.)
+
+3. Git pull - git pull downloads files from the remote repository to the working directory (your local machine)
+
+```
+git pull <remote> <branch>
+```
+
+Remote is used to merge with the specific branch
+
+For mote about git pull click [here](https://www.atlassian.com/git/tutorials/syncing/git-pull#:~:text=The%20git%20pull%20command%20is,Git%2Dbased%20collaboration%20work%20flows.)
+
+4. Git push - git push uploads the files from the git directory towards the remote repository. This transfers the files from your local repository to the remote repository.
+
+```
+git push <remote> <branch>
+```
+
+Pushes the specified branch along with the objects to a local branch that gets created in the destination repository.
+
+For morea bout git push click [here](https://www.atlassian.com/git/tutorials/syncing/git-push#:~:text=The%20git%20push%20command%20is,exports%20commits%20to%20remote%20branches.)
+
+5. Git merge - git merge combines all of the commits from different sequences into one history line.
+
+```
+# Start a new feature
+git checkout -b new-feature main
+# Edit some files
+git add <file>
+git commit -m "Start a feature"
+# Edit some files
+git add <file>
+git commit -m "Finish a feature"
+# Merge in the new-feature branch
+git checkout main
+git merge new-feature
+```
+
+Here is different commits between two different branches that merge into one called new-feature
+
+For more about git push click [here](https://www.atlassian.com/git/tutorials/using-branches/git-merge#:~:text=Git%20merge%20will%20combine%20multiple,used%20to%20combine%20two%20branches.)
 
 ---
 
