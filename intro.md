@@ -176,7 +176,7 @@ This deletes the file
 git rm cache
 ```
 
-This removes the file from the working staging area
+This removes the file from the staging area
 
 For more about git rm click [here](http://guides.beanstalkapp.com/version-control/common-git-commands.html)
 
@@ -190,7 +190,24 @@ For more about git checkout click [here](https://www.atlassian.com/git/tutorials
 
 ---
 
-![Alt text](Screenshot_2.png)
+```mermaid
+---
+title: Git Diagram
+---
+flowchart LR
+    id1[Working directory] --> |git add| Staging
+    Staging --> |git commit| id2[Git directory]
+    Staging --> |git checkout| id1
+    id1 --> |git rm| id2
+    id1 --> |git branch| id2
+    id1 --> |git log| id2
+    id1 --> |git status| Staging
+    id1 --> |git version| id1
+    id1 --> |git config| id2
+    id1 --> |git init| id2
+    Staging --> |git init| id2
+
+```
 
 ---
 
