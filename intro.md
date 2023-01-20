@@ -298,3 +298,62 @@ Github is a cloud based repository for your Git service. It is the main lead of 
 4.  Scan the QR-code on your phone with authentication app
 5.  Download the safety codes somewhere safe
 6.  Done
+
+---
+
+## Github branch test
+
+### Documentation of branches in git as a team
+
+1. Cloned the new repository from Github with specifically dev branch
+
+```
+git clone --branch dev https://github.com/axelhagerback/branchtest_praktik.git
+```
+
+2. Debated with the team what changes we will make to the site
+
+   - 2 people change the background colour of the site
+   - 2 people change the text title
+
+3. From
+
+```
+<h1 class="text-center text-4xl font-bold">TE4 Academy</h1>
+```
+
+To
+
+```
+<h1 class="text-center text-4xl font-bold">TE4 Education</h1>
+```
+
+4. Then changed branch
+
+```
+git checkout dev
+```
+
+5. Pulled the latest changes
+
+```
+git pull origin dev
+```
+
+6. Merged with new branch
+
+```
+git merge new_feature
+```
+
+7. Pushed it up to main branch
+
+```
+git push origin main
+```
+
+8. Fixed merge with commit
+
+```
+git push origin dev
+```
