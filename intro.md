@@ -364,29 +364,29 @@ git push origin dev
 
 ### Variable definitions
 
-**Var** is used for globally accessibility which you never want. It can be made to change the variables value later on.
+`Var` is used for globally accessibility which you never want. It can be made to change the variables value later on.
 
-**Let** is used when declaring a variable within a block scope such as a function loop and can only be used within. It isn't accessible outside of the block.
+`Let` is used when declaring a variable within a block scope such as a function loop and can only be used within. It isn't accessible outside of the block.
 
-**Const** is used to declare unchangeable variables in the code.
+`Const` is used to declare unchangeable variables in the code.
 
 ### Primitives
 
 There are 7 primitives some used more than others.
 
-**Number** is when you use any type of numbers for a variable
+`Number` is when you use any type of numbers for a variable
 
-**String** is when you write any type of text line in a variable
+`String` is when you write any type of text line in a variable
 
-**BigInt** is used when a number is over 9 quintillion as it the takes too much data to use
+`BigInt` is used when a number is over 9 quintillion as it the takes too much data to use
 
-**BooLean** gives out only two different options, true or false
+`BooLean` gives out only two different options, true or false
 
-**Symbol** came out recently and makes the value its own identity. Even if you have two of the same strings in different variables they will not be the same because of their identity.
+`Symbol` came out recently and makes the value its own identity. Even if you have two of the same strings in different variables they will not be the same because of their identity.
 
-**undefined** is when there isn't anything assigned to that variable.
+`Undefined` is when there isn't anything assigned to that variable.
 
-**null** is when there isn't anything assigned to it _yet_
+`Null` is when there isn't anything assigned to it _yet_
 
 You can use `typeof` too identify what primitive a variable is:
 
@@ -411,7 +411,7 @@ console.log("eagle: ", typeof eagle);
 "eagle: ", "object"
 ```
 
-**Array** used when you need to store data.
+`Array` used when you need to store data.
 
 ```
 let anka = new Array("Audi", "Volvo", "BMW");
@@ -437,7 +437,7 @@ Arrays are made so there can't be errors but instead it gives out undefined valu
 
 ## Properties
 
-**Length** tells the length of, in this case the array
+`Length` tells the length of, in this case the array
 
 ```
 let anka = ["Audi", "BMW", "VW"];
@@ -454,7 +454,7 @@ console.log(swan);
 [1, 2, 3, undefined, undefined, undefined, undefined, 42]
 ```
 
-**splice()** is a method that lets you add new data in the middle of an existing array.
+`Splice()` is a method that lets you add new data in the middle of an existing array.
 
 Current array
 
@@ -476,7 +476,7 @@ There are three parameters in splice. First is the index position or where we wa
 
 ```
 
-**concat()** is used to combine two arrays into one
+`Concat()` is used to combine two arrays into one
 
 ```
 let anka = ["Audi", "BMW", "VW"];
@@ -506,13 +506,13 @@ undefined
 
 pelican is undefined because Toyota isn't part of the array
 
-Instead of find() you can use **indexOf()** to find the position in the array. If a value doesn't exist it will be determined as -1 instead of undefined.
+Instead of `find()` you can use `indexOf()` to find the position in the array. If a value doesn't exist it will be determined as -1 instead of undefined.
 
-**sort()** will sort the array based on the alphabetical order of the words (example first audi then BMW etc)
+`sortOf()` will sort the array based on the alphabetical order of the words (example first audi then BMW etc)
 
-**reverse()** will reverse the order of the array
+`reverse()` will reverse the order of the array
 
-**Classes** are used to create or sort objects and makes it easier and smoother to add new objects.
+`Classes` are used to create or sort objects and makes it easier and smoother to add new objects.
 
 ```
 class Car {
@@ -530,11 +530,11 @@ console.log(car01);
 console.log(car02);
 ```
 
-In this case there is a **constructor** whose job is to add the new objects (this case car01 and car02) into the class if the keywords that are declared are find within the code.
+In this case there is a `constructor` whose job is to add the new objects (this case car01 and car02) into the class if the keywords that are declared are find within the code.
 
 This will add the new objects into our class "Car" which we then can print out with the new values.
 
-**methods** can also be used in a class.
+`Methods` can also be used in a class.
 
 ```
 class Person {
@@ -552,7 +552,7 @@ console.log(anka);
 anka.sayhello();
 ```
 
-**properties** as well can be usd in a class which act as bi-directional. This means their value can be set and get incase you want to control what's been entered or calculated.
+`properties` as well can be usd in a class which act as bi-directional. This means their value can be set and get incase you want to control what's been entered or calculated.
 
 ```
 class Person {
@@ -574,5 +574,5 @@ anka.firstname = "Arne";
 console.log(anka.fullname);
 ```
 
-The "#" before first and lastname is used to prevent code outside of the class to access it. The **set** makes it possible to update the firstname that we previously made unaccessible, which this is a way to control what's being sent.
-The **get** makes us control what is being read from the objects like we did with **set**.
+The "#" before first and lastname is used to prevent code outside of the class to access it. The `set` makes it possible to update the firstname that we previously made unaccessible, which this is a way to control what's being sent.
+The `get` makes us control what is being read from the objects like we did with `set`.
