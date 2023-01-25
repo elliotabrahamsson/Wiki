@@ -489,7 +489,7 @@ console.log(pelican);
 ["Audi", "BMW", "VW", "Seat", "Cupra", "Mazda"]
 ```
 
-To find something in an array you use **find()**
+To find something in an array you use `find()`
 
 ```
 let anka = ["BMW", "VW", "Audi"];
